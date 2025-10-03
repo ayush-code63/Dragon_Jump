@@ -14,6 +14,7 @@ A minimal 2D endless runner game where you control a dragon jumping over obstacl
 - 🚀 **Progressive Difficulty** - Speed increases over time
 - 🎨 **Dynamic Contrast** - Background changes every 15 seconds for added challenge
 - ✨ **Particle Effects** - Visual feedback for jumps and coin collection
+- 🔊 **Sound Effects** - Audio feedback for jumps, coins, and game over
 - 🏆 **Score System** - Collect coins and survive as long as possible
 
 ## 🎮 Controls
@@ -184,4 +185,4 @@ Contributions are welcome! Feel free to:
 
 ---
 
-Made with ❤️ using Python.
+Made with ❤️ using Python and Amazon Q Developer

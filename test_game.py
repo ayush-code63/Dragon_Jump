@@ -29,6 +29,7 @@ class MockWindow:
     def getTheme(self): return 'light'
     def showGameOver(self, score): pass
     def setContrast(self, enabled): pass
+    def playSound(self, soundId): pass
 
 # Mock the JS imports
 import sys

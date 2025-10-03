@@ -86,10 +86,19 @@ window.getTheme = () => {
 window.showGameOver = (score) => {
     document.getElementById('final-score').textContent = score;
     document.getElementById('game-over-modal').classList.remove('hidden');
+    window.playSound('gameover-sound');
 };
 
 window.setContrast = (enabled) => {
     document.documentElement.setAttribute('data-contrast', enabled);
+};
+
+window.playSound = (soundId) => {
+    const sound = document.getElementById(soundId);
+    if (sound) {
+        sound.currentTime = 0;
+        sound.play().catch(e => console.log('Sound play failed:', e));
+    }
 };
 
 function restartGame() {

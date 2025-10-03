@@ -55,6 +55,7 @@ class DragonJump:
             self.dragon['vel_y'] = self.jump_power
             self.dragon['on_ground'] = False
             self.create_particles(self.dragon['x'], self.dragon['y'] + self.dragon['height'])
+            window.playSound('jump-sound')
             
     def update(self):
         current_time = time.time()
@@ -155,6 +156,7 @@ class DragonJump:
                     self.coins.remove(coin)
                     self.score += 50
                     self.create_particles(coin['x'], coin['y'], color='gold')
+                    window.playSound('coin-sound')
                     
     def create_particles(self, x, y, color='white'):
         for _ in range(5):
