@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Jump</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1>🐉 Dragon Jump</h1>
+            <div class="loading-spinner"></div>
+            <p>Loading game...</p>
+        </div>
+    </div>
+    
+    <nav id="navbar">
+        <div class="nav-left">
+            <h2>🐉 Dragon Jump</h2>
+        </div>
+        <div class="nav-center">
+            <div id="score">Score: 0</div>
+        </div>
+        <div class="nav-right">
+            <a href="https://github.com/ayush-code63" target="_blank">GitHub</a>
+            <a href="https://t.me/ayush_maurya_63" target="_blank">Telegram</a>
+        </div>
+    </nav>
+    
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+    </div>
+
+    <!-- Modals -->
+    <div id="theme-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>🐉 Dragon Jump</h3>
+            <h4>Choose Your Theme</h4>
+            <button onclick="selectTheme('light')">☀️ Light Mode</button>
+            <button onclick="selectTheme('dark')">🌙 Dark Mode</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Game Over!</h3>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button onclick="restartGame()">Play Again</button>
+            <button onclick="goHome()">🏠 Home</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
