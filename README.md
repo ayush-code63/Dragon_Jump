@@ -184,4 +184,4 @@ Contributions are welcome! Feel free to:
 
 ---
 
-Made with ❤️ using Python and Amazon Q Developer
+Made with ❤️ using Python.
